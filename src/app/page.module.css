@@ -1,0 +1,20 @@
+.highlight {
+    position: absolute;
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(circle, rgba(24, 41, 84, 0.5) 0%, rgba(94, 234, 213, 0) 60%);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Para garantir que fique acima de todos os outros elementos */
+}
+
+.final{
+    font-family: "Inter", monospace;
+    color: #94A3B8;
+    padding: 50px;
+    margin: auto 0;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+

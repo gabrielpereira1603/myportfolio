@@ -1,0 +1,52 @@
+.projects {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 16px;
+    gap: 20px;
+}
+
+.projects:hover {
+    border-radius: 8px;
+    background-color: rgba(146, 206, 197, 0.168);
+    border: solid 0.2px rgba(255, 255, 255, 0.167);
+}
+
+.image{
+    width: 20%;
+    margin-top: 6px;
+}
+
+.infoProject {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%; /* Certifique-se de que a largura seja consistente */
+    gap: 14px;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: #E0E0E0;
+    align-items: center;
+    position: relative;
+}
+
+.projects:hover .title {
+    color: #5EEAD4;
+}
+
+.icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.projects:hover .icon {
+    transform: translate(5px, -5px);
+}
+
+.body p{
+    color: #94A3B8;
+}

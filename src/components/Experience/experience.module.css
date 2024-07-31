@@ -1,0 +1,93 @@
+.experience {
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    padding: 16px;
+    position: relative;
+    gap: 10px;
+    align-items: flex-start; /* Certifique-se de que os itens estejam alinhados no início */
+}
+
+.time {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    color: #94A3B8;
+}
+
+.time small {
+    font-weight: 400;
+}
+
+.infoExperience {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 80%; /* Certifique-se de que a largura seja consistente */
+    gap: 14px;
+}
+
+.experience:hover {
+    border-radius: 8px;
+    background-color: rgba(146, 206, 197, 0.168);
+    border: solid 0.2px rgba(255, 255, 255, 0.167);
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: #E0E0E0;
+    align-items: center;
+    position: relative;
+}
+
+.experience:hover .title {
+    color: #5EEAD4;
+}
+
+.icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.experience:hover .icon {
+    transform: translate(5px, -5px);
+}
+
+.body {
+    color: #94A3B8;
+}
+
+.links {
+    color: #E0E0E0;
+}
+
+.links ul {
+    display: flex;
+    flex-direction: row;
+    gap: 22px;
+}
+
+.links ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.8rem;
+}
+
+.technology ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.technology ul li {
+    color: rgba(94, 234, 212, 1);
+    background-color: rgba(45, 212, 191, 0.1);
+    padding: 8px;
+    border-radius: 18px;
+    font-size: 0.7rem;
+    font-weight: 300;
+}

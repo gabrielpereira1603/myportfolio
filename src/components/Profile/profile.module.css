@@ -1,0 +1,112 @@
+.profile {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    margin: 60px 0px 30px 150px;
+    gap: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh; /* Ocupa toda a altura da tela */
+    overflow: auto;
+    padding: 20px; /* Adicione padding conforme necessário */
+}
+
+.profileInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.profileInfo h1 {
+    color: #E0E0E0;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.profileInfo h2 {
+    color: #E0E0E0;
+    font-size: 1.5rem;
+}
+
+.profileInfo p {
+    color: #94A3B8;
+    font-size: 0.8rem;
+    max-width: 400px;
+}
+
+.profileNav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-direction: column;
+}
+
+.profileNav li {
+    margin-bottom: 20px; /* Espaço entre os itens da lista */
+}
+
+.profileNav a {
+    color: #94A3B8;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.profileNav a::before {
+    content: '';
+    width: 35px; /* Largura inicial da linha */
+    height: 1px; /* Altura da linha */
+    background-color: #94A3B8; /* Cor da linha */
+    border-radius: 2px; /* Cantos arredondados da linha */
+    margin-right: 16px; /* Espaço entre a linha e o texto */
+    transition: width 0.3s ease; /* Animação suave para a largura da linha */
+}
+
+/* Aumenta a largura da linha quando o link está ativo ou em foco */
+.profileNav a:hover::before,
+.profileNav a:focus::before,
+.profileNav a.active::before {
+    width: 80px; /* Largura da linha quando ativa */
+    background-color: #E0E0E0;
+}
+
+.profileNav a:hover {
+    color: #E0E0E0; /* Cor ao passar o mouse */
+}
+
+.profileNav a.active {
+    color: #E0E0E0; /* Cor do texto quando o link está ativo */
+}
+
+.profileNav a:hover {
+    color: #E0E0E0; /* Cor ao passar o mouse */
+}
+
+.profileLinks ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    flex-direction: row;
+    gap: 26px;
+}
+
+.profileLinks a {
+    transition: fill 0.3s ease;
+}
+
+.profileLinks a:hover .icon {
+    fill: blue; /* Cor ao passar o mouse */
+}
+
+.profileLinks a:active .icon {
+    fill: #E0E0E0; /* Cor ao clicar */
+}
