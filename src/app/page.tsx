@@ -73,27 +73,29 @@ export default function Home() {
                 </section>
                 <section id="experience">
                     <Experience 
-                        timePeriod="2024 - PRESENT" 
-                        title="Junior Software Engineer" 
+                        timePeriod="2023 - PRESENT" 
+                        title="Computer Technician" 
                         company="AME-SFS" 
-                        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eget lacus vitae massa tempus consectetur. Proin et purus ut ligula facilisis convallis. Nunc volutpat, dolor et cursus..." 
-                        companyLink="https://somosdevteam.com" 
-                        technologies={["PHP", "JavaScript", "Laravel"]} 
+                        description="Na área de TI, supervisiono o sistema de impressão e gerencio servidores para garantir operações eficientes. 
+                        Fornecendo suporte técnico e desenvolvendo soluções automatizadas, meu objetivo é otimizar a eficiência tecnológica da empresa." 
+                        companyLink="https://amesfs.com.br/" 
+                        technologies={["Infraestrutura", "Servidores", "Linux", "Redes"]} 
                         links={[
-                            { href: "https://github.com/username", label: "GitHub" },
-                            { href: "https://linkedin.com/in/username", label: "LinkedIn" }
+                            { href: "https://amesfs.com.br/", label: "AME-SFS" }
                         ]}
                     />
                     <Experience 
-                        timePeriod="2022 - 2024" 
-                        title="Intern Software Engineer" 
-                        company="Tech Solutions" 
-                        description="Worked on several internal tools and automation projects, gaining experience in various programming languages and frameworks." 
-                        companyLink="https://techsolutions.com" 
-                        technologies={["Python", "Django", "React"]} 
+                        timePeriod="2023 - PRESENT" 
+                        title="FullStack Junior Developer" 
+                        company="Somos Devs Corporation" 
+                        description="Como desenvolvedor web fico responsavel por densevolver landing pages e aplicações web.
+                        fico responsável desde o front end ate o back end.
+                        Sempre procurando desenvolver códigos limpos e utilizando padrões de projetos, 
+                        focando sempre na facilidade de entendimentodo escalabilidade do código." 
+                        companyLink="https://somosdevteam.com/" 
+                        technologies={["CSS", "HTML", "PHP", "Java"]} 
                         links={[
-                            { href: "https://github.com/username", label: "GitHub" },
-                            { href: "https://linkedin.com/in/username", label: "LinkedIn" }
+                            { href: "Somos Dev's", label: "LinkedIn" }
                         ]}
                     />
                 </section>
@@ -101,9 +103,15 @@ export default function Home() {
                     <Projects 
                         title="Sistema de Manutenção Integrado"
                         image={LogoSMI}
-                        description="Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                        Soluta qui voluptates facilis minus deleniti veritatis totam nulla omnis, 
-                        odit explicabo velit quasi laudantium earum porro laborum accusantium delectus harum adipisci?"
+                        description="Projeto desenvolvido para o Centro Universitário de Santa Fé do Sul - UNIFUNEC como trabalho de conclusão de curso. 
+                        Nesse sistema foi utilizado PHP puro para fazer todo o gerenciamento de rotas, middlewares, sessões, request e response.
+                        Para algumas funções do sistema foi utilizado uma API SpringBoot.
+                        Atualmente o sistema se encontra ar sendo hospedado na Hostigator.
+                        O sistema conta com gerenciamento de Ordens de Serviço(O.S), 
+                        gerenciamento de usuários, geração de relatórios com a opção de download em PDF, 
+                        Dashboards personalizados e gerenciamento de equipamentos da universidade.
+
+                        Atualmente estou trabalhando para fazer a migração do projeto para uma arquitetura de software mais limpa, utilizando Clean Architecture, Conceitos S.O.L.I.D e TDD(Test-driven development) Desenvolvimento guiado por testes."
                     />  
                 </section>
 
