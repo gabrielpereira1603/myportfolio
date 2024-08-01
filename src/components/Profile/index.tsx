@@ -52,22 +52,22 @@ export const Profile: React.FC<ProfileProps> = ({ activeSection }) => {
             <div className={styles.profileLinks}>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a href="https://github.com/gabrielpereira1603">
                             <Image src={GitHubIcon} className='icon' alt='GitHub' width={20}/>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/gabrielalvespereira16/">
                             <Image src={LinkedInIcon} className='icon' alt='LinkedIn' width={20}/>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://www.instagram.com/gpereira_dev/">
                             <Image src={InstagramIcon} className='icon' alt='Instagram' width={20}/>
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="https://somosdevteam.com/">
                             <Image src={SiteIcon} className='icon' alt='Site' width={20}/>
                         </a>
                     </li>
