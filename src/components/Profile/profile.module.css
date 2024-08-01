@@ -110,3 +110,24 @@
 .profileLinks a:active .icon {
     fill: #E0E0E0; /* Cor ao clicar */
 }
+
+
+
+@media (max-width: 1000px) {
+    .profile {
+        font-family: "JetBrains Mono", monospace;
+        margin: 20px;
+        height: auto;
+        width: auto;
+        font-optical-sizing: auto;
+        font-style: normal;
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+        position: relative;
+    }
+
+    .profileNav{
+        display: none;
+    }
+}

@@ -6,6 +6,9 @@ import Image from 'next/image';
 export const About = () => {
     return(
         <div className={styles.about}>
+            <div className={styles.responsiveText}>
+                <a href="#about">ABOUT</a>
+            </div>
             <p>
                 Minha história com a tecnologia teve início aos meus 09 anos de idade. Após uma fase difícil da minha
                 vida, meu meio de refúgio foi o computador.

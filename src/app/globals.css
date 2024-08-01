@@ -38,6 +38,26 @@ body {
   overflow-y: auto;
 }
 
+@media (max-width: 1000px) {
+  body {
+    color: rgb(var(--foreground-rgb));
+    background: var(--primary-color);
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainContent {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
 
 @layer utilities {
   .text-balance {

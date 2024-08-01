@@ -7,3 +7,29 @@
     flex-direction: column;
     color: #94A3B8;
 }
+
+.responsiveText {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .about{
+        font-family: "JetBrains Mono", monospace;
+        font-optical-sizing: auto;
+        font-style: normal;
+        color: #94A3B8;
+    }
+
+    .responsiveText {
+        display: block;
+        color: #E0E0E0;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin-bottom: 4px;
+    }
+}
