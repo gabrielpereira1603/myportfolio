@@ -67,7 +67,7 @@ export default function Home() {
 
     return (
         <div className="container">
-            <div className={styles.highlight} style={{ left: highlightStyle.left, top: highlightStyle.top }}></div>
+            <div className={styles.highlight}  style={{ left: highlightStyle.left, top: highlightStyle.top }}></div>
             <Profile activeSection={activeSection} />
             <main className="mainContent">
                 <section id="about">
