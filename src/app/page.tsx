@@ -7,7 +7,9 @@ import { Experience } from "@/components/Experience/index";
 import styles from './page.module.css';
 import { Projects } from "@/components/Projects/index";
 
+import LogoMyCorte from '@/../public/assets/MyCorte.png';
 import LogoSMI from '@/../public/assets/smi.png';
+
 import Image from "next/image";
 
 export default function Home() {
@@ -113,6 +115,12 @@ export default function Home() {
 
                         Atualmente estou trabalhando para fazer a migração do projeto para uma arquitetura de software mais limpa, utilizando Clean Architecture, Conceitos S.O.L.I.D e TDD(Test-driven development) Desenvolvimento guiado por testes."
                     />  
+
+                    <Projects 
+                        title="MyCorte"
+                        image={LogoMyCorte}
+                        description="MyCorte é um sistema inovador de agendamento de horários voltado para barbearias e salões de beleza. Nosso objetivo é facilitar a gestão de horários, reduzir cancelamentos e aumentar a base de clientes fiéis, proporcionando uma experiência eficiente e agradável para clientes e profissionais. Utilizamos tecnologias modernas como PHP, Laravel, JavaScript e SpringBoot para desenvolver funcionalidades robustas como agendamentos, reagendamentos, criação de promoções, análise de desempenho e dashboards personalizáveis."
+                    />
                 </section>
 
                 <p className={styles.final}>
