@@ -7,12 +7,14 @@ interface ProjectsProps {
     title: string;
     image: StaticImageData;
     description: string;
+    redirect: string;
 }
 
 export const Projects: React.FC<ProjectsProps> = ({
     title,
     image,
-    description
+    description,
+    redirect
 }) => {
     return (
         <div className={styles.projects}>
@@ -27,7 +29,7 @@ export const Projects: React.FC<ProjectsProps> = ({
             <div className={styles.infoProject}>
                 <div className={styles.title}>
                     <h4>
-                        <a href="#">{title}</a>
+                        <a href={redirect} target='_blank'>{title}</a>
                     </h4>
                     <Image src={ArrowIcon} className={styles.icon} alt="Ir" width={10} />
                 </div>

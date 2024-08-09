@@ -46,6 +46,15 @@ export const Profile: React.FC<ProfileProps> = ({ activeSection }) => {
                             PROJECTS
                         </a>
                     </li>
+
+                    <li>
+                        <a 
+                            href="#certificates" 
+                            className={activeSection === 'certificates' ? styles.active : ''}
+                        >
+                            CERTIFICATES
+                        </a>
+                    </li>
                 </ul>
             </div>
 

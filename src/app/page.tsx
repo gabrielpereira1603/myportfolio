@@ -6,10 +6,14 @@ import { About } from "@/components/About";
 import { Experience } from "@/components/Experience/index";
 import styles from './page.module.css';
 import { Projects } from "@/components/Projects/index";
+import { Certificates } from "@/components/Certificates";
 
 import LogoMyCorte from '@/../public/assets/MyCorte.png';
 import LogoSMI from '@/../public/assets/smi.png';
 import LogoCordeirinho from '@/../public/assets/cordeiro.png';
+
+import AmeCertificate from '@/../public/assets/certificates/ame.png';
+import CleanArcCertiticate from '@/../public/assets/certificates/cleanArc.png';
 import Image from "next/image";
 
 export default function Home() {
@@ -71,8 +75,9 @@ export default function Home() {
             <Profile activeSection={activeSection} />
             <main className="mainContent">
                 <section id="about">
-                    <About />
+                    <About/>
                 </section>
+
                 <section id="experience">
                     <Experience 
                         timePeriod="2023 - PRESENT" 
@@ -86,6 +91,7 @@ export default function Home() {
                             { href: "https://amesfs.com.br/", label: "AME-SFS" }
                         ]}
                     />
+
                     <Experience 
                         timePeriod="2023 - PRESENT" 
                         title="FullStack Junior Developer" 
@@ -101,6 +107,7 @@ export default function Home() {
                         ]}
                     />
                 </section>
+                
                 <section id="projects">
                     <Projects 
                         title="Sistema de Manutenção Integrado"
@@ -112,22 +119,48 @@ export default function Home() {
                         O sistema conta com gerenciamento de Ordens de Serviço(O.S), 
                         gerenciamento de usuários, geração de relatórios com a opção de download em PDF, 
                         Dashboards personalizados e gerenciamento de equipamentos da universidade.
-
                         Atualmente estou trabalhando para fazer a migração do projeto para uma arquitetura de software mais limpa, utilizando Clean Architecture, Conceitos S.O.L.I.D e TDD(Test-driven development) Desenvolvimento guiado por testes."
+                        redirect="https://somosdevteam.com/SMI/login"
                     />  
 
                     <Projects 
                         title="MyCorte"
                         image={LogoMyCorte}
                         description="MyCorte é um sistema inovador de agendamento de horários voltado para barbearias e salões de beleza. Nosso objetivo é facilitar a gestão de horários, reduzir cancelamentos e aumentar a base de clientes fiéis, proporcionando uma experiência eficiente e agradável para clientes e profissionais. Utilizamos tecnologias modernas como PHP, Laravel, JavaScript e SpringBoot para desenvolver funcionalidades robustas como agendamentos, reagendamentos, criação de promoções, análise de desempenho e dashboards personalizáveis."
+                        redirect="https://mycorte.somosdevteam.com/"
                     />
 
                     <Projects 
                         title="Cordeirinho Tv"
                         image={LogoCordeirinho}
                         description="Na Cordeirinhos TV, somos uma comunidade cristã comprometida não apenas em oferecer entretenimento infantil baseado na fé, mas também em transmitir os ensinamentos sagrados deixados por Deus.om 100% da nossa equipe composta por profissionais cristãos, priorizamos conteúdos que promovam valores como amor, compaixão e solidariedade familiar, protegendo as crianças das influências negativas do mundo."
+                        redirect="https://somosdevteam.com/portfolio/cordeirinhostv/"
                     />
                 </section>
+
+                <section id="certificates">
+                    <Certificates
+                        title="Certificado de Reconhecimento"
+                        description="Gostaria de expressar minha profunda gratidão por este ano de muito trabalho e aprendizado. É um prazer imenso fazer parte desta organização, e espero poder continuar contribuindo de forma significativa por muito mais tempo."
+                        image={AmeCertificate}
+                        links={[]}
+                        technologies={["Redes", "VMware", "Zabbix", "Suporte"]}
+                    />
+
+                    <Certificates
+                        title="PHP e Clean Architecture"
+                        description="Aprenda o que é arquitetura de software,
+                            Conheça padrões arquiteturais como Clean Architecture,
+                            Saiba as vantagens de módulos,
+                            Use padrões como Services, Entidades, Repositórios, entre outros e 
+                            Entenda os casos de uso"
+                        image={CleanArcCertiticate}
+                        links={[
+                            { href: "https://cursos.alura.com.br/certificate/57dd6a1c-a063-4ced-80f4-c89bf236f97a?lang", label: "Alura" }
+                        ]}
+                        technologies={["PHP", "Design Patterns", "Arquitetura Software", "POO"]}
+                    />
+              </section>
 
                 <p className={styles.final}>
                     Projetado livremente em Figma e codificado em Visual Studio Code por mim. Construído com Next.js e Tailwind CSS.
