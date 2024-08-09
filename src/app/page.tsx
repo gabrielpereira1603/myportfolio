@@ -9,7 +9,7 @@ import { Projects } from "@/components/Projects/index";
 
 import LogoMyCorte from '@/../public/assets/MyCorte.png';
 import LogoSMI from '@/../public/assets/smi.png';
-
+import LogoCordeirinho from '@/../public/assets/cordeiro.png';
 import Image from "next/image";
 
 export default function Home() {
@@ -120,6 +120,12 @@ export default function Home() {
                         title="MyCorte"
                         image={LogoMyCorte}
                         description="MyCorte é um sistema inovador de agendamento de horários voltado para barbearias e salões de beleza. Nosso objetivo é facilitar a gestão de horários, reduzir cancelamentos e aumentar a base de clientes fiéis, proporcionando uma experiência eficiente e agradável para clientes e profissionais. Utilizamos tecnologias modernas como PHP, Laravel, JavaScript e SpringBoot para desenvolver funcionalidades robustas como agendamentos, reagendamentos, criação de promoções, análise de desempenho e dashboards personalizáveis."
+                    />
+
+                    <Projects 
+                        title="Cordeirinho Tv"
+                        image={LogoCordeirinho}
+                        description="Na Cordeirinhos TV, somos uma comunidade cristã comprometida não apenas em oferecer entretenimento infantil baseado na fé, mas também em transmitir os ensinamentos sagrados deixados por Deus.om 100% da nossa equipe composta por profissionais cristãos, priorizamos conteúdos que promovam valores como amor, compaixão e solidariedade familiar, protegendo as crianças das influências negativas do mundo."
                     />
                 </section>
 
