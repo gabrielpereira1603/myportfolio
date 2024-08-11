@@ -31,7 +31,7 @@ export const Certificates: React.FC<CertificateProps> = ({
 
     return (
         <div className={styles.certificates}>
-            <div className={styles.image} onClick={handleOpenModal}>
+            <div className={styles.image}>
                 <Image
                     src={image}
                     alt={title}
@@ -73,14 +73,7 @@ export const Certificates: React.FC<CertificateProps> = ({
                 </div>
             </div>
 
-            {isModalOpen && (
-                <div className={styles.modal}>
-                    <div className={styles.modalContent}>
-                        <span className={styles.close} onClick={handleCloseModal}>&times;</span>
-                        <Image src={image} alt={title} layout="responsive" />
-                    </div>
-                </div>
-            )}
+        
         </div>
     );
 }

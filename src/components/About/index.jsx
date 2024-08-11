@@ -1,8 +1,6 @@
 import styles from './about.module.css'
 import Image from 'next/image';
 
-
-
 export const About = () => {
     return(
         <div className={styles.about}>

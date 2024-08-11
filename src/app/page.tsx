@@ -1,12 +1,18 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { Profile } from '@/components/Profile/index'; // Ajuste o caminho conforme necessário
+import { Profile } from '@/components/Profile/index'; 
 import { About } from "@/components/About";
 import { Experience } from "@/components/Experience/index";
 import styles from './page.module.css';
 import { Projects } from "@/components/Projects/index";
 import { Certificates } from "@/components/Certificates";
+import { Technologies } from "@/components/Technologies/technologies";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/effect-cube';
+import 'swiper/css/pagination';
+import { EffectCube, Pagination } from 'swiper/modules';
 
 import LogoMyCorte from '@/../public/assets/MyCorte.png';
 import LogoSMI from '@/../public/assets/smi.png';
@@ -22,7 +28,6 @@ export default function Home() {
 
     useEffect(() => {
         const handleMouseMove = (e: MouseEvent) => {
-            // Atualiza as coordenadas com base na posição de rolagem atual
             const x = e.clientX + window.scrollX;
             const y = e.clientY + window.scrollY;
     
@@ -32,15 +37,12 @@ export default function Home() {
             });
         };
     
-        // Adiciona o evento de movimentação do mouse ao documento inteiro
         document.addEventListener('mousemove', handleMouseMove as EventListener);
     
         return () => {
-            // Remove o evento quando o componente for desmontado
             document.removeEventListener('mousemove', handleMouseMove as EventListener);
         };
     }, []);
-
 
     useEffect(() => {
         const sections = document.querySelectorAll('main section');
@@ -79,6 +81,7 @@ export default function Home() {
                 </section>
 
                 <section id="experience">
+                    <h2 className={styles.responsiveText}>EXPERIENCE</h2>
                     <Experience 
                         timePeriod="2023 - PRESENT" 
                         title="Computer Technician" 
@@ -107,8 +110,11 @@ export default function Home() {
                         ]}
                     />
                 </section>
+
+              
                 
                 <section id="projects">
+                    <h2 className={styles.responsiveText}>PROJECTS</h2>
                     <Projects 
                         title="Sistema de Manutenção Integrado"
                         image={LogoSMI}
@@ -138,28 +144,49 @@ export default function Home() {
                     />
                 </section>
 
-                <section id="certificates">
-                    <Certificates
-                        title="Certificado de Reconhecimento"
-                        description="Gostaria de expressar minha profunda gratidão por este ano de muito trabalho e aprendizado. É um prazer imenso fazer parte desta organização, e espero poder continuar contribuindo de forma significativa por muito mais tempo."
-                        image={AmeCertificate}
-                        links={[]}
-                        technologies={["Redes", "VMware", "Zabbix", "Suporte"]}
-                    />
+                <section id="certificates" className={styles.certificates}>
+                    <h2 className={styles.responsiveText}>CERTIFICATES</h2>
+                    <Swiper
+                        effect={"cube"}
+                        grabCursor={true}
+                        cubeEffect={{
+                            shadow: true,
+                            slideShadows: true,
+                            shadowOffset: 20,
+                            shadowScale: 0.94,
+                        }}
+                        pagination={true}
+                        loop={true} 
+                        modules={[EffectCube, Pagination]}
+                        className={styles.swiperContainer}
+                    >
 
-                    <Certificates
-                        title="PHP e Clean Architecture"
-                        description="Aprenda o que é arquitetura de software,
-                            Conheça padrões arquiteturais como Clean Architecture,
-                            Saiba as vantagens de módulos,
-                            Use padrões como Services, Entidades, Repositórios, entre outros e 
-                            Entenda os casos de uso"
-                        image={CleanArcCertiticate}
-                        links={[
-                            { href: "https://cursos.alura.com.br/certificate/57dd6a1c-a063-4ced-80f4-c89bf236f97a?lang", label: "Alura" }
-                        ]}
-                        technologies={["PHP", "Design Patterns", "Arquitetura Software", "POO"]}
-                    />
+                        <SwiperSlide>
+                            <Certificates
+                                title="Certificado de Reconhecimento"
+                                description="Gostaria de expressar minha profunda gratidão por este ano de muito trabalho e aprendizado. É um prazer imenso fazer parte desta organização, e espero poder continuar contribuindo de forma significativa por muito mais tempo."
+                                image={AmeCertificate}
+                                links={[]}
+                                technologies={["Redes", "VMware", "Zabbix", "Suporte"]}
+                            />
+                        </SwiperSlide>
+
+                        <SwiperSlide>
+                            <Certificates
+                                title="PHP e Clean Architecture"
+                                description="Aprenda o que é arquitetura de software,
+                                Conheça padrões arquiteturais como Clean Architecture,
+                                Saiba as vantagens de módulos,
+                                Use padrões como Services, Entidades, Repositórios, entre outros e 
+                                Entenda os casos de uso"
+                                image={CleanArcCertiticate}
+                                links={[
+                                    { href: "https://cursos.alura.com.br/certificate/57dd6a1c-a063-4ced-80f4-c89bf236f97a?lang", label: "Alura" }
+                                ]}
+                                technologies={["PHP", "Design Patterns", "Arquitetura Software", "POO"]}
+                            />
+                        </SwiperSlide>
+                    </Swiper>
               </section>
 
                 <p className={styles.final}>

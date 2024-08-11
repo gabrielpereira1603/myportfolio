@@ -1,5 +1,4 @@
 .certificates{
-    margin-top: 50px;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -122,4 +121,8 @@
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    
 }

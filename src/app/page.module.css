@@ -5,7 +5,11 @@
     background: radial-gradient(circle, rgba(24, 41, 84, 0.5) 0%, rgba(94, 234, 213, 0) 60%);
     pointer-events: none;
     transform: translate(-50%, -50%);
-    z-index: 9999; /* Para garantir que fique acima de todos os outros elementos */
+    z-index: 8888; /* Para garantir que fique acima de todos os outros elementos */
+}
+
+.certificates{
+    margin-top: 30px;
 }
 
 .final{
@@ -17,4 +21,23 @@
     font-weight: 400;
 }
 
+.responsiveText {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .responsiveText {
+        display: block;
+        color: #94A3B8;
+        font-family: "Inter", sans-serif;
+        font-optical-sizing: auto;
+        text-decoration: none;
+        transition: color 0.3s ease;
+        display: flex;
+        align-items: center;
+        font-size: 1rem;
+        margin: 22px 12px 12px 12px;
+    }
+     
+}
 
