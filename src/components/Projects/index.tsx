@@ -8,13 +8,15 @@ interface ProjectsProps {
     image: StaticImageData;
     description: string;
     redirect: string;
+    technologies: string[];
 }
 
 export const Projects: React.FC<ProjectsProps> = ({
     title,
     image,
     description,
-    redirect
+    redirect,
+    technologies
 }) => {
     return (
         <div className={styles.projects}>
@@ -36,7 +38,19 @@ export const Projects: React.FC<ProjectsProps> = ({
                 <div className={styles.body}>
                     <p>{description}</p>
                 </div>
+
+                <div className={styles.technology}>
+                <ul>
+                    {technologies.map((tech, index) => (
+                        <li key={index}>
+                            <a href="#">{tech}</a>
+                        </li>
+                    ))}
+                </ul>
             </div>
+            </div>
+
+        
         </div>
     )
 }
